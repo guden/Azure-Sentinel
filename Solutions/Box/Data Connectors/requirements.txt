@@ -4,8 +4,10 @@
 
 azure-functions
 
-pyjwt==2.4.0
-cryptography==39.0.1
-boxsdk==3.3.0
+pyjwt==2.15.0
+cryptography==50.0.0
+boxsdk==3.14.0
+# Older requests-toolbelt releases cannot import with urllib3 2.x.
+requests-toolbelt>=1.0.0,<2
 azure-storage-file-share==12.7.0
 python-dateutil==2.8.2
