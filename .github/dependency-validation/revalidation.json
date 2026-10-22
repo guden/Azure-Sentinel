@@ -1,0 +1,328 @@
+{
+  "review_date": "2026-10-22",
+  "python": "3.11.17",
+  "heads": {
+    "15": "16ca800263283d52e83a53dc110342d9e0c63151",
+    "16": "447d8d7b5b4290ec9352cee2ce11f562a72e6377",
+    "17": "ed54a46edbf39a26708bde4104f5de46b005afdc"
+  },
+  "scope": "Offline checks only; entry imports use synthetic settings with socket connections blocked. Existing isolated environments reused; this is not a fresh-install rerun or staging validation.",
+  "results": {
+    "box": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "box: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 24 packages in 0.58ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "azure-functions": "1.25.0",
+        "msrest": "0.7.1",
+        "Werkzeug": "3.1.9",
+        "azure-storage-file-share": "12.7.0",
+        "PyJWT": "2.15.0",
+        "requests-oauthlib": "2.0.0",
+        "boxsdk": "3.14.0",
+        "requests-toolbelt": "1.0.0",
+        "cffi": "2.1.1",
+        "MarkupSafe": "3.0.4",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "python-dateutil": "2.8.2",
+        "cryptography": "50.0.0",
+        "certifi": "2026.10.19",
+        "typing_extensions": "4.16.0",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "isodate": "0.7.2",
+        "pycparser": "3.12",
+        "requests": "2.34.2"
+      }
+    },
+    "cloudflare": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "cloudflare: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 25 packages in 0.74ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "msrest": "0.7.1",
+        "requests-oauthlib": "2.0.0",
+        "propcache": "0.5.4",
+        "cffi": "2.1.1",
+        "aiosignal": "1.4.0",
+        "azure-functions": "1.6.0",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "certifi": "2026.10.19",
+        "frozenlist": "1.8.0",
+        "typing_extensions": "4.16.0",
+        "yarl": "1.25.1",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "isodate": "0.7.2",
+        "azure-storage-blob": "12.8.0",
+        "aiohappyeyeballs": "2.7.1",
+        "multidict": "6.9.1",
+        "aiohttp": "3.14.3",
+        "pycparser": "3.12",
+        "cryptography": "50.0.2",
+        "requests": "2.34.2"
+      }
+    },
+    "crowdstrike": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "crowdstrike: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 32 packages in 0.93ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "botocore": "1.43.106",
+        "msrest": "0.7.1",
+        "requests-oauthlib": "2.0.0",
+        "wrapt": "2.5.1",
+        "propcache": "0.5.4",
+        "cffi": "2.1.1",
+        "aioitertools": "0.13.0",
+        "jmespath": "1.1.0",
+        "aiobotocore": "3.9.2",
+        "aiosignal": "1.4.0",
+        "azure-functions": "1.6.0",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "certifi": "2026.10.19",
+        "frozenlist": "1.8.0",
+        "typing_extensions": "4.16.0",
+        "yarl": "1.25.1",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "python-dateutil": "2.9.0.post0",
+        "isodate": "0.7.2",
+        "gzip-stream": "1.2.0",
+        "azure-storage-file-share": "12.5.0",
+        "aiohappyeyeballs": "2.7.1",
+        "multidict": "6.9.1",
+        "aiohttp": "3.14.3",
+        "pycparser": "3.12",
+        "cryptography": "50.0.2",
+        "requests": "2.34.2"
+      }
+    },
+    "gcp": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n<isolated-environment>/lib/python3.11/site-packages/google/cloud/monitoring_v3/services/alert_policy_service/client.py:23: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "gcp: PASS (offline probe only)\n<isolated-environment>/lib/python3.11/site-packages/google/cloud/monitoring_v3/services/alert_policy_service/client.py:23: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 36 packages in 1ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "google-api-core": "1.34.1",
+        "googleapis-common-protos": "1.73.0",
+        "msrest": "0.7.1",
+        "google-cloud-monitoring": "2.2.1",
+        "pyasn1": "0.6.4",
+        "protobuf": "3.20.3",
+        "requests-oauthlib": "2.0.0",
+        "proto-plus": "1.27.1",
+        "propcache": "0.5.4",
+        "cffi": "2.1.1",
+        "aiosignal": "1.4.0",
+        "azure-functions": "1.6.0",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "certifi": "2026.10.19",
+        "grpcio": "1.84.1",
+        "frozenlist": "1.8.0",
+        "google-auth": "2.62.0",
+        "typing_extensions": "4.16.0",
+        "yarl": "1.25.1",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "grpcio-status": "1.48.2",
+        "isodate": "0.7.2",
+        "azure-storage-file-share": "12.5.0",
+        "pyasn1_modules": "0.4.2",
+        "aiohappyeyeballs": "2.7.1",
+        "multidict": "6.9.1",
+        "aiohttp": "3.14.3",
+        "pycparser": "3.12",
+        "cryptography": "50.0.2",
+        "requests": "2.34.2",
+        "setuptools": "80.9.0"
+      }
+    },
+    "prisma": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "prisma: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 27 packages in 0.51ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "azure-functions": "1.25.0",
+        "msrest": "0.7.1",
+        "Werkzeug": "3.1.9",
+        "requests-oauthlib": "2.0.0",
+        "propcache": "0.5.4",
+        "cffi": "2.1.1",
+        "aiosignal": "1.4.0",
+        "MarkupSafe": "3.0.4",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "certifi": "2026.10.19",
+        "frozenlist": "1.8.0",
+        "typing_extensions": "4.16.0",
+        "yarl": "1.25.1",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "isodate": "0.7.2",
+        "azure-storage-file-share": "12.4.1",
+        "aiohappyeyeballs": "2.7.1",
+        "multidict": "6.9.1",
+        "aiohttp": "3.14.3",
+        "pycparser": "3.12",
+        "cryptography": "50.0.2",
+        "requests": "2.34.2"
+      }
+    },
+    "rapid7": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "rapid7: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 26 packages in 0.50ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "attrs": "26.1.0",
+        "oauthlib": "4.0.0",
+        "six": "1.17.0",
+        "msrest": "0.7.1",
+        "requests-oauthlib": "2.0.0",
+        "propcache": "0.5.4",
+        "cffi": "2.1.1",
+        "aiosignal": "1.4.0",
+        "azure-functions": "1.6.0",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "python-dateutil": "2.8.2",
+        "certifi": "2026.10.19",
+        "frozenlist": "1.8.0",
+        "typing_extensions": "4.16.0",
+        "yarl": "1.25.1",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "isodate": "0.7.2",
+        "azure-storage-file-share": "12.4.1",
+        "aiohappyeyeballs": "2.7.1",
+        "multidict": "6.9.1",
+        "aiohttp": "3.14.3",
+        "pycparser": "3.12",
+        "cryptography": "50.0.2",
+        "requests": "2.34.2"
+      }
+    },
+    "snowflake": {
+      "imports": {
+        "exit": 0,
+        "output": "ENTRY IMPORT PASS\n"
+      },
+      "smoke": {
+        "exit": 0,
+        "output": "snowflake: PASS (offline probe only)\n"
+      },
+      "check": {
+        "exit": 0,
+        "output": "Using Python 3.11.17 environment at: <isolated-environment>\nChecked 34 packages in 0.90ms\nAll installed packages are compatible\n"
+      },
+      "installed": {
+        "tomlkit": "0.15.2",
+        "oauthlib": "4.0.0",
+        "platformdirs": "4.13.5",
+        "six": "1.17.0",
+        "azure-functions": "1.25.0",
+        "msrest": "0.7.1",
+        "Werkzeug": "3.1.9",
+        "pyOpenSSL": "25.3.0",
+        "botocore": "1.43.117",
+        "asn1crypto": "1.5.1",
+        "requests-oauthlib": "2.0.0",
+        "filelock": "3.32.7",
+        "pytz": "2026.5",
+        "boto3": "1.43.117",
+        "snowflake-connector-python": "3.18.1",
+        "jmespath": "1.1.0",
+        "cryptography": "46.0.0",
+        "MarkupSafe": "3.0.4",
+        "charset-normalizer": "3.5.2",
+        "urllib3": "2.8.0",
+        "python-dateutil": "2.8.2",
+        "certifi": "2026.10.19",
+        "PyJWT": "2.15.1",
+        "requests": "2.31.0",
+        "typing_extensions": "4.16.0",
+        "idna": "3.20",
+        "azure-core": "1.41.0",
+        "sortedcontainers": "2.4.0",
+        "isodate": "0.7.2",
+        "s3transfer": "0.19.3",
+        "azure-storage-file-share": "12.5.0",
+        "cffi": "1.17.1",
+        "packaging": "26.3",
+        "pycparser": "3.12"
+      }
+    }
+  }
+}

@@ -122,3 +122,41 @@ python -c 'import OpenSSL'
 - Snowflake 3.x migration: https://github.com/guden/Azure-Sentinel/pull/17
 
 Both are drafts. Their requirements changes have been removed from PR #15.
+
+## Second validation pass
+
+Rechecked the published heads, rather than the original working copy:
+
+- PR #15: `16ca800263283d52e83a53dc110342d9e0c63151`
+- PR #16: `447d8d7b5b4290ec9352cee2ce11f562a72e6377`
+- PR #17: `ed54a46edbf39a26708bde4104f5de46b005afdc`
+
+All remained open, draft and unmerged. Each had a successful `github-advanced-security`
+check. Inspection of PR #15's job log shows a security review, not connector execution;
+that green check is not evidence of dependency installation or functional compatibility.
+
+On Python 3.11.17, seven connectors each passed (21 checks total):
+
+1. Actual entry-point module import and callable `main`, using synthetic configuration
+   with socket connections blocked.
+2. The committed offline compatibility probe.
+3. Installed dependency consistency (`uv pip check`).
+
+Connectors: Box, Cloudflare, CrowdStrike, GCP Monitoring, Prisma Cloud and Rapid7 from
+PR #15, plus Snowflake from PR #17. The isolated environments from the initial clean
+install tests were reused; this second pass does not claim a fresh installation.
+GCP continues to emit the expected pkg_resources deprecation warning.
+
+`revalidation.json` records the source heads, outputs and all installed package versions.
+`entry_import.py` contains the added import probe; run it in a connector-specific environment:
+
+```sh
+python .github/dependency-validation/entry_import.py . \
+  'Solutions/Box/Data Connectors/AzureFunctionBox' main.py
+```
+
+Also confirmed that AWS and Snowflake requirements in PR #15 exactly match the base
+commit after the split. The smoke script in PR #17 is identical to PR #15's version.
+No deployment files or production connector code were changed in this second pass.
+The runtime, AWS, Trend Micro and live-staging blockers above remain unresolved;
+these results do not authorise a merge.
