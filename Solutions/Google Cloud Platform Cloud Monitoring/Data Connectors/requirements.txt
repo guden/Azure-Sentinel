@@ -2,3 +2,7 @@ google-cloud-monitoring==2.2.1
 azure-functions==1.6.0
 aiohttp==3.14.3
 azure-storage-file-share==12.5.0
+# Required at import time by the pinned Azure Storage SDK.
+six==1.17.0
+# google-cloud-monitoring 2.2.1 imports pkg_resources (removed in setuptools 81).
+setuptools==80.9.0
